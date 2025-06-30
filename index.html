@@ -181,7 +181,7 @@
              title="Enter a valid 10-digit phone number starting with 0 (e.g., 0712345678)" />
 
       <label for="amount">Amount (Min 50 KSh):</label>
-      <input type="number" id="amount" min="50" required autocomplete="off" />
+      <input type="number" id="amount" min="5" required autocomplete="off" />
 
       <label for="mpesaNumber">Mpesa Number:</label>
       <input type="tel" id="mpesaNumber" required autocomplete="off"
@@ -217,7 +217,7 @@
           msgEl.className = 'error';
           return;
         }
-        if (isNaN(amount) || amount < 50) {
+        if (isNaN(amount) || amount < 5) {
           msgEl.innerText = 'Please enter an amount of at least 50 KSh.';
           msgEl.className = 'error';
           return;
