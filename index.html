@@ -159,7 +159,7 @@
       <img src="https://i.imgur.com/3CNZdsB.jpeg" alt="Logo" class="logo" />
       <h2>Become a Prime Contact</h2>
       <p style="color: red; font-weight: bold; text-align: center; margin-top: -12px;">
-        After successful payment, you will be added to your preferred user database to receive messages.
+        You will get prompt to entre MPESA PIN. After successful payment, you will be added to your preferred user database to receive messages.
       </p>
 
       <label for="name">Full Name:</label>
@@ -181,7 +181,7 @@
              title="Enter a valid 10-digit phone number starting with 0 (e.g., 0712345678)" />
 
       <label for="amount">Amount (Min 50 KSh):</label>
-      <input type="number" id="amount" min="5" required autocomplete="off" />
+      <input type="number" id="amount" min="50" required autocomplete="off" />
 
       <label for="mpesaNumber">Mpesa Number:</label>
       <input type="tel" id="mpesaNumber" required autocomplete="off"
@@ -217,7 +217,7 @@
           msgEl.className = 'error';
           return;
         }
-        if (isNaN(amount) || amount < 5) {
+        if (isNaN(amount) || amount < 50) {
           msgEl.innerText = 'Please enter an amount of at least 50 KSh.';
           msgEl.className = 'error';
           return;
